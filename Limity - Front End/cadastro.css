@@ -1,0 +1,127 @@
+
+
+header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+#cadastroPage {
+  font-family: Arial, sans-serif;
+  background-color: #222222;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.cadastro-container {
+  max-width: 400px;
+  width: 90%;
+  box-sizing: border-box; 
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #333333;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.cadastro-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  box-sizing: border-box; 
+}
+
+/* Botão de cadastro */
+#cadastroBtn {
+  width: 100%; 
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#cadastroBtn:hover {
+  background-color: #e07b00;
+}
+
+/* Ajuste da lista de usuários */
+.result-section {
+  margin-top: 30px;
+}
+
+.result-section h3 {
+  margin-bottom: 10px;
+}
+
+#userList {
+  list-style: none;
+  padding: 0;
+}
+
+#userList li {
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.home-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff8c00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #e07b00;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .cadastro-container {
+    width: 95%; /* O container ocupará quase toda a largura da tela */
+    padding: 15px;
+  }
+
+  .form-group input {
+    padding: 8px; /* Reduz o padding dos campos em telas menores */
+  }
+
+  #cadastroBtn {
+    padding: 8px; /* Botão menor em dispositivos pequenos */
+  }
+}

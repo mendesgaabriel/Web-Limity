@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Limity - O seu planner de atividades físicas para academia e caminhadas. Transforme sua rotina e conquiste seus objetivos.">
+  <title>Limity - Planner Fitness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo Limity">
+      <h1>Limity</h1>
+    </div>
+    
+    <!-- Navegação centralizada -->
+    <nav class="nav-centralizada">
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#Aplicativo">Aplicativo</a></li>
+        <li><a href="#Sobre nós">Sobre nós</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Opção de Login à direita -->
+    <div class="login">
+      <a href="#login">Login</a>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Seção sobre -->
+    <section id="sobre" class="section">
+      <div class="sobre-conteudo">
+        <div class="sobre-imagem">
+          <div class="imagem-container">
+            <img src="telas/ATIVIDADE FINAL.png" alt="Imagem sobre o Limity">
+          </div>
+        </div>
+        <div class="sobre-texto">
+          <p>Inspirado por uma dor pessoal, o Limity foi criado para transformar a sua rotina de treinos e ajudar a aliviar as dores pelo mundo, promovendo saúde e qualidade de vida.</p>
+
+          <!-- Lista com checkboxes e ícones -->
+          <ul class="sobre-lista">
+            <li><img src="imagens/check-icon.png" alt="Check"> Logue seus treinos intuitivos</li>
+            <li><img src="imagens/check-icon.png" alt="Check"> Rotina avançada de planejamento</li>
+            <li><img src="imagens/check-icon.png" alt="Check"> Controle de descanso, drop e séries falhadas</li>
+            <li><img src="imagens/check-icon.png" alt="Check"> Tempo de descanso automatizado</li>
+            <li><img src="imagens/check-icon.png" alt="Check"> Adicione notas aos seus exercícios</li>
+            <li><img src="imagens/check-icon.png" alt="Check"> Crie seus exercícios</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário de Login -->
+    <section id="login" class="section">
+      <h2>Receba informações antecipadas sobre o Limity!</h2>
+      <form action="#" method="POST" class="form-login">
+        <!-- Campo de Email -->
+        <div class="form-group">
+          <label for="email">Seu melhor email: </label>
+          <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        </div>
+    
+
+        <!-- Botão de Submit -->
+        <div class="form-group">
+          <button type="submit" class="botao-laranja">Entrar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Limity. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

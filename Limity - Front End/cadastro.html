@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Cadastro</title>
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body id="cadastroPage">
+  <header>
+    <h1>Cadastro - Limity</h1>
+  </header>
+
+  <main>
+    <section class="cadastro-container">
+      <h2>Cadastro de Novo Usuário</h2>
+      <form id="cadastroForm">
+        <div class="form-group">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Digite seu email">
+        </div>
+        <div class="form-group">
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required placeholder="Digite sua senha">
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirmar Senha:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirme sua senha">
+        </div>
+        <button type="submit" id="cadastroBtn">Cadastrar</button>
+      </form>
+      <div id="location"></div>
+    </section>
+
+    <section class="result-section" id="resultSection">
+      <h3>Usuários Cadastrados:</h3>
+      <ul id="userList"></ul>
+    </section>
+    
+    <section class="home-section">
+      <a href="main.html" class="home-button">Voltar para Home</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Limity. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilização do cabeçalho */
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    height: 120px; /* Ajuste a altura conforme necessário */
+}
+
+/* Para adicionar opacidade à imagem de fundo */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Cor preta com 40% de opacidade */
+    z-index: -1; /* Coloca a camada atrás do conteúdo */
+}
+
+/* Estilização da logo */
+header .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+    filter: brightness(0) invert(1); /* Para tornar a logo branca, se necessário */
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Navegação centralizada */
+.nav-centralizada {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-centralizada ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-centralizada ul li {
+    margin: 0;
+}
+
+.nav-centralizada ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-centralizada ul li a:hover {
+    background-color: #FFA826;
+    border-radius: 5px;
+}
+
+/* Estilização do botão de Login */
+header .login a {
+    text-decoration: none;
+    background-color: #FFA826;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+header .login a:hover {
+    background-color: #FF8C00;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(imagens/home.jpg) no-repeat center center/cover;
+    opacity: 0.3; /* Altere esse valor conforme necessário */
+    z-index: -1;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #e04e2f;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.section ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 12px 30px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+form button:hover {
+    background-color: #e04e2f;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo específico para a seção "Sobre" */
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.sobre-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.sobre-imagem {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.imagem-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-imagem img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.sobre-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre-lista li {
+    font-size: 100;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sobre-lista img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Resposta adaptada para dispositivos móveis */
+@media (max-width: 768px) {
+    .sobre-conteudo {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .sobre-imagem {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+/* Estilo para o botão laranja */
+.botao-laranja {
+    background-color: #FFA500; /* Cor laranja */
+    color: white;              /* Cor do texto */
+    border: none;              /* Remove a borda padrão */
+    padding: 10px 20px;        /* Tamanho do botão */
+    font-size: 16px;           /* Tamanho da fonte */
+    cursor: pointer;          /* Cursor de clique */
+    border-radius: 5px;        /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+  }
+  
+  .btn-laranja:hover {
+    background-color: #e68900; /* Cor de hover (escurecida para o efeito) */
+  }
+  
+
