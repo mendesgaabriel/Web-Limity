@@ -1,6 +1,5 @@
   # Limity
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 
 ![logo](https://github.com/user-attachments/assets/a40595fb-113f-4757-938f-f3a4a50cafe4)
 
